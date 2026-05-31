@@ -1,0 +1,33 @@
+baseURL = 'https://antarct.qzz.io/'
+locale = 'zh-cn'
+title = "南极林的博客"
+theme = 'PaperMod'
+
+[params]
+  description = "南极林的个人博客"
+  author = "南极林"
+
+  [params.homeInfoParams]
+    Title = "你好，我是南极林"
+    Content = "欢迎来到我的博客！这里记录技术、生活和思考。"
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/antarctlin'
+
+[menu]
+  [[menu.main]]
+    identifier = 'archives'
+    name = "归档"
+    url = '/archives'
+    weight = 10
+  [[menu.main]]
+    identifier = 'search'
+    name = "搜索"
+    url = '/search'
+    weight = 20
+  [[menu.main]]
+    identifier = 'about'
+    name = "关于"
+    url = '/about'
+    weight = 30
