@@ -92,6 +92,35 @@ body {
   transform: scaleX(1);
 }
 
+/* ---------- 导航栏社交图标 ---------- */
+.nav-social-icons {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-inline-end: 4px;
+}
+
+.nav-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  color: var(--secondary);
+  transition: all 0.2s;
+}
+
+.nav-social-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.nav-social-icon:hover {
+  background: var(--accent-muted);
+  color: var(--accent);
+}
+
 /* ---------- Theme toggle ---------- */
 #theme-toggle {
   border-radius: 8px;
