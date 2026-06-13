@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Blog | 南极林的博客</title>
+<title>Writing | 南极林的博客</title>
 <meta name="keywords" content="">
 <meta name="description" content="南极林的个人博客">
 <meta name="author" content="南极林">
-<link rel="canonical" href="https://antarct.qzz.io/tags/blog/">
+<link rel="canonical" href="https://antarct.qzz.io/tags/writing/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.61488a8302cfd7b1e94d781f71370219ac95480bbfb649664992414c3e9a5b2c.css" integrity="sha256-YUiKgwLP17HpTXgfcTcCGayVSAu/tklmSZJBTD6aWyw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://antarct.qzz.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://antarct.qzz.io/favicon-16x16.png">
@@ -18,8 +18,8 @@
 <link rel="mask-icon" href="https://antarct.qzz.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://antarct.qzz.io/tags/blog/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="https://antarct.qzz.io/tags/blog/">
+<link rel="alternate" type="application/rss+xml" href="https://antarct.qzz.io/tags/writing/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://antarct.qzz.io/tags/writing/">
 <noscript>
     <style>
         #theme-toggle,
@@ -65,15 +65,15 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://antarct.qzz.io/tags/blog/">
+</script><meta property="og:url" content="https://antarct.qzz.io/tags/writing/">
   <meta property="og:site_name" content="南极林的博客">
-  <meta property="og:title" content="Blog">
+  <meta property="og:title" content="Writing">
   <meta property="og:description" content="南极林的个人博客">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Blog">
+  <meta name="twitter:title" content="Writing">
   <meta name="twitter:description" content="南极林的个人博客">
 
 </head>
@@ -147,42 +147,29 @@
 <main class="main"> 
 <header class="page-header">
   <h1>
-    Blog
+    Writing
   </h1>
 </header>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Hugo PaperMod 主题美化指南
+    <h2 class="entry-hint-parent">Markdown 写作指南
     </h2>
   </header>
   <div class="entry-content">
-    <p>承接上一篇 Hugo 搭建教程，这篇文章专门讲如何美化 PaperMod 主题。
-为什么选 PaperMod？ PaperMod 是 Hugo 生态中最受欢迎的博客主题之一。它简洁、快速、支持深色模式，而且提供了丰富的自定义接口——你不需要修改主题源码，就能实现各种个性化效果。
-1. 自定义颜色主题 PaperMod 使用 CSS 变量来控制颜色。在 assets/css/extended/ 目录下创建自定义 CSS 文件，就可以覆盖主题默认颜色：
-:root { --accent: #6366f1; --theme: #f8f9fc; --entry: #ffffff; --primary: #1a1d23; --secondary: #6b7280; --border: rgba(0,0,0,0.07); } [data-theme=&#34;dark&#34;] { --accent: #818cf8; --theme: #0b0d11; --entry: #15171e; --primary: #e8eaed; --secondary: #9aa0ac; --border: rgba(255,255,255,0.06); } 2. 更换字体 在同一个 CSS 文件中引入 Google Fonts：
-@import url(&#39;https://fonts.googleapis.com/css2?family=Noto&#43;Sans&#43;SC:wght@300;400;500;700&amp;display=swap&#39;); body { font-family: &#39;Noto Sans SC&#39;, -apple-system, BlinkMacSystemFont, sans-serif; } 国内用户可以换成思源黑体或方正兰亭等中文字体。
+    <p>Markdown 是一种轻量级标记语言，让你用纯文本格式写文档，却能输出格式丰富的 HTML。写博客、记笔记、写 README，Markdown 都是不二之选。
+为什么推荐 Markdown？ 专注内容：不用分心调整格式，写就是了 纯文本：任何编辑器都能打开，永远不会过时 生态丰富：GitHub、Notion、Obsidian 等都支持 学习成本低：五分钟就能上手 基本语法 标题 # 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 一个文档建议只有一个一级标题，二号标题用于分隔章节。
+段落与换行 段落之间用空行分隔：
+这是第一段。 这是第二段，和上面隔了一个空行。 文字样式 *斜体* 或 _斜体_ **粗体** 或 __粗体__ ***加粗斜体*** ~~删除线~~ `行内代码` 渲染效果：斜体、粗体、加粗斜体、删除线、行内代码。
+列表 无序列表：
+- 苹果 - 香蕉 - sub item 缩进两个空格 - 橙子 有序列表：
+1. 第一步 2. 第二步 3. 第三步 链接 [描述文字](https://example.com) [带标题的链接](https://example.com &#34;鼠标悬停时显示的文字&#34;) 图片 ![替代文字](https://example.com/image.jpg) 引用 &gt; 这是一段引用 &gt; 可以跨多行 &gt; &gt; &gt; 引用里可以嵌套引用 代码块 用三个反引号包围，可以指定语言实现语法高亮：
 ...</p>
   </div>
   <footer class="entry-footer">
 
 <span title='2026-06-13 00:00:00 +0000 UTC'>June 13, 2026</span>&nbsp;·&nbsp;<span>南极林</span></footer>
-  <a class="entry-link" aria-label="post link to Hugo PaperMod 主题美化指南" href="https://antarct.qzz.io/posts/hugo-papermod-customization/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">零成本搭建个人博客：Hugo &#43; GitHub Pages 指南
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>前言 一直想搭一个个人博客，但又不想花钱买服务器？这篇文章手把手教你用 Hugo &#43; GitHub Pages &#43; Cloudflare 免费搭建一个属于自己的博客。
-...</p>
-  </div>
-  <footer class="entry-footer">
-
-<span title='2026-05-31 17:56:31 +0800 +0800'>May 31, 2026</span>&nbsp;·&nbsp;<span>南极林</span></footer>
-  <a class="entry-link" aria-label="post link to 零成本搭建个人博客：Hugo &#43; GitHub Pages 指南" href="https://antarct.qzz.io/posts/hugo-blog-tutorial/"></a>
+  <a class="entry-link" aria-label="post link to Markdown 写作指南" href="https://antarct.qzz.io/posts/markdown-guide/"></a>
 </article>
     </main>
     

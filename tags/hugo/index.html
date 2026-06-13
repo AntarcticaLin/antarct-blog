@@ -153,6 +153,25 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Hugo PaperMod 主题美化指南
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>承接上一篇 Hugo 搭建教程，这篇文章专门讲如何美化 PaperMod 主题。
+为什么选 PaperMod？ PaperMod 是 Hugo 生态中最受欢迎的博客主题之一。它简洁、快速、支持深色模式，而且提供了丰富的自定义接口——你不需要修改主题源码，就能实现各种个性化效果。
+1. 自定义颜色主题 PaperMod 使用 CSS 变量来控制颜色。在 assets/css/extended/ 目录下创建自定义 CSS 文件，就可以覆盖主题默认颜色：
+:root { --accent: #6366f1; --theme: #f8f9fc; --entry: #ffffff; --primary: #1a1d23; --secondary: #6b7280; --border: rgba(0,0,0,0.07); } [data-theme=&#34;dark&#34;] { --accent: #818cf8; --theme: #0b0d11; --entry: #15171e; --primary: #e8eaed; --secondary: #9aa0ac; --border: rgba(255,255,255,0.06); } 2. 更换字体 在同一个 CSS 文件中引入 Google Fonts：
+@import url(&#39;https://fonts.googleapis.com/css2?family=Noto&#43;Sans&#43;SC:wght@300;400;500;700&amp;display=swap&#39;); body { font-family: &#39;Noto Sans SC&#39;, -apple-system, BlinkMacSystemFont, sans-serif; } 国内用户可以换成思源黑体或方正兰亭等中文字体。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-06-13 00:00:00 +0000 UTC'>June 13, 2026</span>&nbsp;·&nbsp;<span>南极林</span></footer>
+  <a class="entry-link" aria-label="post link to Hugo PaperMod 主题美化指南" href="https://antarct.qzz.io/posts/hugo-papermod-customization/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">零成本搭建个人博客：Hugo &#43; GitHub Pages 指南
     </h2>
   </header>

@@ -6,8 +6,15 @@
     <description>Recent content in Hugo on 南极林的博客</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 31 May 2026 17:56:31 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://antarct.qzz.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo PaperMod 主题美化指南</title>
+      <link>https://antarct.qzz.io/posts/hugo-papermod-customization/</link>
+      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://antarct.qzz.io/posts/hugo-papermod-customization/</guid>
+      <description>手把手教你自定义 PaperMod 主题，打造属于你的个性化博客</description>
+    </item>
     <item>
       <title>零成本搭建个人博客：Hugo &#43; GitHub Pages 指南</title>
       <link>https://antarct.qzz.io/posts/hugo-blog-tutorial/</link>
