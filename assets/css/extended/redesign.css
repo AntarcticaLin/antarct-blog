@@ -195,7 +195,7 @@ body {
 }
 
 .home-info .entry-header::before {
-  content: '南';
+  content: '林';
   display: flex;
   align-items: center;
   justify-content: center;
