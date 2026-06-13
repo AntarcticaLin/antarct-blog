@@ -5,7 +5,7 @@ enableEmoji = true
 theme = 'PaperMod'
 
 [params]
-  defaultTheme = 'dark'
+  # defaultTheme = 'dark'  # 取消强制深色，改由 CSS 保证代码块始终可见
   description = "南极林的个人博客"
   author = "南极林"
 
