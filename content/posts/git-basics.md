@@ -1,169 +1,100 @@
----
-title: "从零开始学 Git：常用命令与工作流"
-date: 2026-06-13
-description: "一篇适合初学者的 Git 入门教程，覆盖日常工作流中最常用的命令"
-tags: ["tutorial", "git", "dev"]
-comments: true
----
++++
+title = '工作中真正在用的 Git 命令'
+date = 2026-06-13
+description = '不是教程，是我的日常操作'
+tags = ['git', 'dev']
+comments = true
++++
 
-Git 是现代开发的必备技能。不管你是独立开发者还是团队协作，掌握 Git 都能让你的工作更高效。
+学了无数次 Git，记住的就那么几个命令。这是我每天真正在用的：
 
-## 什么是 Git？
+<!--more-->
 
-Git 是一个分布式版本控制系统。简单说，它能帮你记录文件的每一次修改，随时回退到任意历史版本，还能和他人协作开发。
-
-## 基础概念
-
-在开始之前，先理解三个核心区域：
-
-- **工作区（Working Directory）**：你当前编辑的文件
-- **暂存区（Staging Area）**：准备提交的修改
-- **仓库（Repository）**：Git 保存历史版本的地方
-
-## 基础配置
-
-安装 Git 后，先设置你的身份：
+## 核心循环
 
 ```bash
-git config --global user.name "你的名字"
-git config --global user.email "你的邮箱"
+git status       # 先看看改了什么
+git add -A       # 全部暂存
+git commit -m "feat: xxx"   # 提交
+git push         # 推送
 ```
 
-其他推荐配置：
+就这四个。
+
+## 分支
 
 ```bash
-git config --global init.defaultBranch main
-git config --global pull.rebase true
+git checkout -b feature/xxx   # 开新分支
+git checkout main             # 切回主分支
+git merge feature/xxx         # 合并
+git branch -d feature/xxx     # 删掉已合并的分支
 ```
 
-## 常用命令
+命名规范：`feature/xxx`、`fix/xxx`、`refactor/xxx`。
 
-### 初始化与克隆
+## 拉取代码
 
 ```bash
-# 初始化一个新仓库
-git init
-
-# 克隆远程仓库
-git clone https://github.com/用户名/仓库名.git
+git pull --rebase
 ```
 
-### 日常操作
+我配了 `pull.rebase true`，所以直接 `git pull` 就是 rebase 模式。好处是提交历史是直线，没有多余的 merge commit。
+
+rebase 冲突了怎么办：
 
 ```bash
-# 查看文件状态
-git status
-
-# 添加文件到暂存区
-git add 文件名      # 添加单个文件
-git add .           # 添加所有变更
-
-# 提交到仓库
-git commit -m "feat: 添加新功能"
-
-# 查看提交历史
-git log --oneline
-```
-
-### 分支操作
-
-```bash
-# 查看分支
-git branch
-
-# 创建新分支
-git branch feature-login
-
-# 切换分支
-git checkout feature-login
-
-# 创建并切换（快捷方式）
-git checkout -b feature-login
-
-# 合并分支
-git checkout main
-git merge feature-login
-
-# 删除分支
-git branch -d feature-login
-```
-
-### 远程仓库
-
-```bash
-# 添加远程仓库
-git remote add origin https://github.com/用户/仓库.git
-
-# 推送代码
-git push origin main
-
-# 拉取最新代码
-git pull origin main
-
-# 推送新分支
-git push -u origin feature-login
-```
-
-## 推荐工作流
-
-### 单人开发
-
-```bash
-main 分支 ← 直接在上面开发，简单直接
-```
-
-### 功能分支工作流
-
-```bash
-main        ← 稳定版本
-  └─ feature/login   ← 开发新功能
-  └─ feature/header  ← 开发另一个功能
-```
-
-开发流程：
-
-```bash
-# 1. 从 main 创建功能分支
-git checkout -b feature/my-feature
-
-# 2. 开发... 然后提交
+# 解决文件冲突
 git add .
-git commit -m "feat: 完成功能开发"
-
-# 3. 切回 main 拉取最新代码
-git checkout main
-git pull
-
-# 4. 合并功能分支
-git merge feature/my-feature
-
-# 5. 推送
-git push origin main
+git rebase --continue
 ```
 
-## 常用 Git 别名
+搞不定就 `git rebase --abort` 回到之前的状态。
 
-让 Git 用起来更顺手：
+## 撤销
+
+这是 Git 里最有用的知识——不同状态用不同命令：
+
+| 状态 | 命令 |
+|------|------|
+| 改了还没 add | `git checkout -- 文件名` |
+| 已经 add 了 | `git reset HEAD 文件名` |
+| 已经 commit 了 | `git reset --soft HEAD~1` |
+| 已经 push 了 | `git revert HEAD`（不是 reset） |
+
+记住 `git revert` 而不是 `git reset` 去撤销已经推送的提交——`reset` 会改写历史，其他人会遭殃。
+
+## 看历史
 
 ```bash
-git config --global alias.st status
-git config --global alias.co checkout
-git config --global alias.br branch
-git config --global alias.ci commit
-git config --global alias.lg "log --oneline --graph"
+git log --oneline         # 简洁版
+git log --oneline --graph # 带分支图
 ```
 
-设置后就可以用 `git st` 代替 `git status` 了。
+我配了别名：
 
-## 遇到冲突怎么办？
+```bash
+git config --global alias.lg "log --oneline --graph --all"
+```
 
-冲突并不可怕。当两个人修改了同一个文件时：
+现在用 `git lg` 看所有分支的拓扑。
 
-1. Git 会标出冲突位置
-2. 手动编辑文件，保留正确的代码
-3. 去掉 `<<<<<<<`、`=======`、`>>>>>>>` 标记
-4. `git add` 然后 `git commit`
+## .gitignore
 
-## 结语
+每个项目第一时间配 `.gitignore`。我遇到过同事把 `.env` 提交到仓库的事，密钥全在 GitHub 上裸奔。
 
-Git 其实不需要一次学会所有命令。记住 `add → commit → push` 这个核心循环，然后按需学习其他功能就好。用得越多，越熟练。
+```
+.env
+node_modules/
+build/
+.idea/
+.DS_Store
+```
+
+## 一些习惯
+
+- 提交信息按 [Conventional Commits](https://www.conventionalcommits.org/) 规范：`feat:` `fix:` `chore:` `docs:`。不是为了好看，是为了以后能 `git log --grep "feat"` 快速筛选
+- 一个提交只做一件事。"修复登录页白屏和更新 README" 应该拆成两个提交
+- `git push` 前先 `git pull --rebase`，避免推送被拒绝
+- 不确定的命令先用 `git xxx --help` 看文档
+
+Git 不需要背命令，记住 `add → commit → push` 这个循环，其他随用随查就行。

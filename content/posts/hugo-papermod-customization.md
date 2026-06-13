@@ -1,126 +1,71 @@
----
-title: "Hugo PaperMod 主题美化指南"
-date: 2026-06-13
-description: "手把手教你自定义 PaperMod 主题，打造属于你的个性化博客"
-tags: ["tutorial", "hugo", "blog"]
-comments: true
----
++++
+title = 'PaperMod 我只改了这几处'
+date = 2026-06-13
+description = '我实际用到的 PaperMod 自定义'
+tags = ['hugo', 'blog']
+comments = true
++++
 
-承接上一篇 Hugo 搭建教程，这篇文章专门讲如何美化 PaperMod 主题。
+PaperMod 是个很完整的主题，默认就很好看。我只改了 4 个地方：
 
-## 为什么选 PaperMod？
+<!--more-->
 
-PaperMod 是 Hugo 生态中最受欢迎的博客主题之一。它简洁、快速、支持深色模式，而且提供了丰富的自定义接口——你不需要修改主题源码，就能实现各种个性化效果。
+## 1. 配色
 
-## 1. 自定义颜色主题
-
-PaperMod 使用 CSS 变量来控制颜色。在 `assets/css/extended/` 目录下创建自定义 CSS 文件，就可以覆盖主题默认颜色：
+改的颜色不多，就换了三个值：
 
 ```css
 :root {
-  --accent: #6366f1;
-  --theme: #f8f9fc;
-  --entry: #ffffff;
-  --primary: #1a1d23;
-  --secondary: #6b7280;
-  --border: rgba(0,0,0,0.07);
-}
-
-[data-theme="dark"] {
-  --accent: #818cf8;
-  --theme: #0b0d11;
-  --entry: #15171e;
-  --primary: #e8eaed;
-  --secondary: #9aa0ac;
-  --border: rgba(255,255,255,0.06);
+  --accent: #2563eb;      // 链接和强调色
+  --theme: #ffffff;        // 页面背景
+  --entry: #f9fafb;        // 文章卡片背景
 }
 ```
 
-## 2. 更换字体
+PaperMod 用了 CSS 变量，在 `assets/css/extended/` 下建个文件覆盖就行，不用碰主题源码。
 
-在同一个 CSS 文件中引入 Google Fonts：
+## 2. 字体
 
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&display=swap');
 body {
   font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 ```
 
-国内用户可以换成思源黑体或方正兰亭等中文字体。
+其实 PaperMod 默认的字体也不错，换了思源黑体感觉阅读稍微舒服点，差别不大。
 
-## 3. 自定义导航栏
+## 3. 代码块
 
-PaperMod 的导航栏支持 `menu` 配置。在 `hugo.toml` 中：
+默认代码块的复制按钮我觉得放上面有点碍眼，保留了但没改样式。主要调整了行距和内边距：
 
-```toml
-[menu]
-  [[menu.main]]
-    identifier = 'archives'
-    name = "归档"
-    url = '/archives'
-    weight = 10
-  [[menu.main]]
-    identifier = 'search'
-    name = "搜索"
-    url = '/search'
-    weight = 20
-  [[menu.main]]
-    identifier = 'about'
-    name = "关于"
-    url = '/about'
-    weight = 30
+```css
+.post-content pre {
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
 ```
 
-## 4. 添加社交图标
+代码块背景用了深色 `#1e293b`，跟默认的灰色做区分。
 
-PaperMod 内置了大量社交图标。在配置中添加：
+## 4. 文章页边距和行距
 
-```toml
-[[params.socialIcons]]
-  name = 'github'
-  url = 'https://github.com/你的用户名'
+PaperMod 默认文章页间距我觉得有点紧，调整了行距和标题边距：
+
+```css
+.post-content {
+  line-height: 1.8;
+}
+.post-content h2 {
+  margin: 2em 0 0.8em;
+}
 ```
 
-支持的图标包括 GitHub、Twitter/X、Bluesky、RSS 等几十种。
+## 没改的
 
-## 5. 开启文章功能
+- 没改导航栏（默认的够用）
+- 没加社交图标以外的任何功能
+- 没用 Shortcodes
+- 没用 Profile Mode
 
-```toml
-[params]
-  ShowReadingTime = true    # 显示阅读时间
-  ShowWordCount = true      # 显示字数
-  ShowCodeCopyButtons = true # 代码块复制按钮
-  ShowShareButtons = true    # 分享按钮
-```
-
-## 6. 归档与搜索页面
-
-PaperMod 支持开箱即用的归档和搜索。创建两个页面文件即可：
-
-`content/archives.md`：
-```
----
-title: "归档"
-layout: "archives"
-url: "/archives/"
-summary: archives
----
-```
-
-`content/search.md`：
-```
----
-title: "搜索"
-layout: "search"
-url: "/search/"
-summary: search
----
-```
-
-## 结语
-
-PaperMod 的设计哲学是"约定优于配置"，你不需要成为 CSS 专家就能做出漂亮的博客。关键在于用好 `assets/css/extended/` 和 `layouts/` 这两个覆盖目录。
-
-下一篇我会分享我的完整配置文件和常用技巧，敬请期待！
+PaperMod 的好处就是默认够好，我只动了真正觉得不舒服的几个像素。

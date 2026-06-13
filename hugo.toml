@@ -3,6 +3,7 @@ locale = 'zh-cn'
 title = "南极林的博客"
 enableEmoji = true
 theme = 'PaperMod'
+defaultTheme = 'dark'
 
 [params]
   description = "南极林的个人博客"

@@ -1,97 +1,48 @@
 +++
 date = '2026-05-31T17:56:31+08:00'
 draft = false
-title = '零成本搭建个人博客：Hugo + GitHub Pages 指南'
-tags = ['tutorial', 'hugo', 'blog']
+title = '我为什么选 Hugo + GitHub Pages 搭博客'
+tags = ['hugo', 'blog']
 comments = true
 +++
 
-## 前言
+去年想搭博客，看了几个方案：
 
-一直想搭一个个人博客，但又不想花钱买服务器？这篇文章手把手教你用 **Hugo + GitHub Pages + Cloudflare** 免费搭建一个属于自己的博客。
+**WordPress** — 太臃肿，还得租服务器。而且 WordPress 被攻击的新闻看多了，不想给自己找事。
+
+**Hexo** — 朋友在用，说文章多了构建越来越慢。我看他博客有几百篇，每次部署要等十几秒，对我来说能忍，但还是想找个更快的。
+
+**Ghost** — 界面确实漂亮，但还是要服务器，免费版限制太多。
+
+**Hugo** — 同事推荐的。一个 .exe 搞定所有，不用装 Node、Ruby、PHP。我试了一下 `hugo new site` 到 `hugo server` 不到一分钟，当场就定了。
+
+## 搭博客的过程
+
+实际搭起来比想象中简单：
+
+1. 装 Hugo Extended 版（普通版不支持 SCSS，我第一次就装错了，构建报错才发现的）
+2. `hugo new site` 创建项目
+3. 装 PaperMod 主题（Git submodule 的方式，方便以后升级）
+4. 配 GitHub Actions 自动部署到 GitHub Pages
+5. 绑域名
+
+全部弄完大概半小时。之后每次写文章就是：`hugo new content posts/xxx.md` → 写完 → `git push`，GitHub Actions 自动部署。
 
 <!--more-->
 
-## 为什么选 Hugo？
+## 用了一年的感受
 
-Hugo 是一个用 Go 语言编写的静态网站生成器，最大的特点是**快**——几百个页面的网站，一秒钟就能生成完毕。而且：
+**好的方面：**
+- 构建真的快，几百篇也是毫秒级
+- Markdown 写东西很专注，不用调格式
+- 零成本，唯一花钱的是域名（其实也是免费的，用的 qzz.io）
+- Git 管理文章，历史记录清晰，不用担心写坏
 
-- 🚀 **极速构建** — 毫秒级生成
-- 🎨 **主题丰富** — 300+ 免费主题
-- 📝 **Markdown 写作** — 专注内容，无需关心排版
-- 🔧 **零依赖** — 一个二进制文件搞定，无需 Node.js 或 Ruby
-
-## 搭建步骤
-
-### 1. 安装 Hugo
-
-```bash
-# Windows
-winget install Hugo.Hugo.Extended
-
-# macOS
-brew install hugo
-```
-
-### 2. 创建站点
-
-```bash
-hugo new site my-blog
-cd my-blog
-git init
-```
-
-### 3. 安装主题
-
-我推荐 [PaperMod](https://github.com/adityatelange/hugo-PaperMod)，简洁大气：
-
-```bash
-git submodule add --depth 1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
-```
-
-### 4. 写文章
-
-```bash
-hugo new content posts/hello-world.md
-```
-
-用 Markdown 写内容，把 `draft = true` 改成 `draft = false` 即可发布。
-
-### 5. 部署到 GitHub Pages
-
-配置 GitHub Actions 自动部署流程，写好文章后只需 `git push`，剩下的事情交给自动化：
-
-```yaml
-# .github/workflows/deploy.yml
-name: Deploy Hugo site to GitHub Pages
-on:
-  push:
-    branches: [main]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          extended: true
-      - name: Build
-        run: hugo --minify
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-```
-
-### 6. 绑定域名
-
-在 Cloudflare 添加 DNS 记录，指向 GitHub Pages，然后在仓库 Settings → Pages 中设置自定义域名。
-
-## 写作建议
-
-- **保持规律** — 每周一篇比一次写十篇更有价值
-- **写给自己** — 首先是为自己记录，顺便帮到别人
-- **不要追求完美** — 先发出来，再慢慢改进
+**不爽的方面：**
+- 没有后台，手机没法写文章（有时候想记个灵感，只能开 GitHub 网页版）
+- 图片处理麻烦，得先压缩再放 `static/` 下引用
+- PaperMod 主题虽然不错，但有些小细节还是得自己改 CSS
 
 ## 总结
 
-搭博客最大的障碍不是技术，而是开始。现在就动手，几分钟就能拥有自己的小天地 🌟
+Hugo + GitHub Pages 适合愿意在本地写 Markdown、懂一点 Git 的人。如果你想要"打开浏览器就能写"的体验，可能 Ghost 或 WordPress 更合适。但对我来说，用了一年了，没想过换。

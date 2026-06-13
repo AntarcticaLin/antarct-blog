@@ -1,64 +1,52 @@
 +++
 date = '2026-05-31T17:56:27+08:00'
 draft = false
-title = '免费域名 US.KG / QZZ.IO 注册教程'
-tags = ['tutorial', 'domain', 'free']
+title = '我的 qzz.io 免费域名用了大半年'
+tags = ['domain', 'free']
 comments = true
 +++
 
-## 前言
+这个博客的域名 `antarct.qzz.io` 是免费域名，来自 DigitalPlat FreeDomain 项目，用了大半年了，目前一切正常。
 
-想搭网站但没有域名？市面上有不少免费域名服务，本文将详细介绍 **DigitalPlat FreeDomain** 的注册和使用方法。
+## 怎么来的
+
+去年搭博客时不想花钱买域名——不是花不起，是觉得万一博客没坚持下来，域名白买了。
+
+搜了一圈免费域名方案：
+
+- **Freenom**（.tk .ml 等）— 曾经最火，但已经被回收了，现在注册不了
+- **EU.org** — 波兰的免费域名，审核要等很久，我等了两周没消息放弃了
+- **DigitalPlat FreeDomain** — 操作简单，当天生效，就它了
 
 <!--more-->
 
-## 什么是 DigitalPlat FreeDomain？
+## DigitalPlat 注册流程
 
-DigitalPlat 是一个提供免费域名的项目，由 Edward Hsing 创立。目前已注册超过 **50 万个域名**，支持多种后缀：
+我在 [dash.domain.digitalplat.org](https://dash.domain.digitalplat.org) 注册账号，填了用户名、邮箱、WHOIS 信息（用英文填的，地址没写真实门牌号），然后申请了 `antarct.qzz.io`。
 
-| 后缀 | 说明 |
-|------|------|
-| `.US.KG` | 最热门，需付费插槽 |
-| `.QZZ.IO` | 简洁短域名 |
-| `.DPDNS.ORG` | 经典选择 |
-| `.QD.JE` | 小众后缀 |
+整个流程很简单：
+1. 注册账号 → 验证邮箱
+2. 去 Dashboard → Register Domain → 输入前缀 → 选后缀 → 确认
+3. 配 DNS
 
-## 注册步骤
+第三步最麻烦。DigitalPlat 不提供 DNS 托管，得自己去 Cloudflare 或者 DNSPod 配 Nameserver。我用的 Cloudflare，添加域名后它给了两个 Nameserver 地址，填回 DigitalPlat 的控制面板就好了。
 
-### 第一步：注册账号
+**坑**：注册完后不要立刻去 Cloudflare 添加域名——DNS 还没生效，Cloudflare 会报错说查不到记录。等 10-30 分钟再去。
 
-打开 [DigitalPlat 控制面板](https://dash.domain.digitalplat.org/auth/register)，填写：
+## 用了大半年的感受
 
-- **用户名** — 唯一标识，会出现在 WHOIS 记录中
-- **邮箱** — 真实常用邮箱
-- **密码** — 至少 12 位
-- **WHOIS 信息** — 姓名、地址、电话
+**好的方面：**
+- 一直稳定，没掉过链子
+- HTTPS 正常（Cloudflare 代理的）
+- 搜索引擎收录正常
 
-> 注册后建议开启 **WHOIS 隐私保护**，隐藏个人信息。
-
-### 第二步：申请域名
-
-登录 Dashboard → 找到 Register Domain → 输入想要的域名 → 选择后缀。
-
-### 第三步：配置 DNS
-
-推荐用 **Cloudflare**（需 VPN）或 **DNSPod（腾讯云）**（国内直连）：
-
-1. 在 DNS 提供商添加你的域名
-2. 获取 Nameserver 地址
-3. 填回 DigitalPlat 控制面板
-
-### 第四步：等待生效
-
-DNS 传播通常几分钟到几小时。生效后你的域名就可以正常使用了。
-
-## 几点提醒
-
-- 每个账号默认只能注册 **1 个域名**
-- 域名有效期一年，到期前 120 天内可**免费续期**
-- 有自动续期脚本可用：[DigitalPlat-FreeDomain-Continue](https://github.com/adamzqcj/DigitalPlat-FreeDomain-Continue)
-- Telegram 官方群已被入侵，请勿相信任何 Telegram 消息
+**需要注意的：**
+- 有效期一年，到期前 120 天才能续期。我在手机日历设了提醒
+- 有自动续期脚本，但我没用——怕脚本哪天突然不能用了反而不如自己手动续可靠
+- Telegram 官方群被入侵过，别信上面的任何消息
 
 ## 总结
 
-免费域名适合个人博客、测试项目、开源项目展示。虽然功能上不如付费域名灵活，但对于个人使用完全足够。快去申请一个吧！
+如果你只是想搭个个人博客或测试项目，免费域名完全够用。我现在用了大半年，没遇到任何问题。即使哪天这个域名不能用了，也就换个域名的事——文章数据在 GitHub 上丢不了。
+
+毕竟，`git push` 才是真正的"域名"。
