@@ -9,11 +9,11 @@
     <lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://antarct.qzz.io/tags/writing/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Markdown 写作指南</title>
+      <title>我写博客的 Markdown 习惯</title>
       <link>https://antarct.qzz.io/posts/markdown-guide/</link>
       <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://antarct.qzz.io/posts/markdown-guide/</guid>
-      <description>一篇学会 Markdown 语法，从此专注于内容本身</description>
+      <description>没多少技巧，但有些小细节</description>
     </item>
   </channel>
 </rss>

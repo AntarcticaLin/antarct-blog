@@ -10,7 +10,7 @@
 <meta name="description" content="南极林的个人博客">
 <meta name="author" content="南极林">
 <link rel="canonical" href="https://antarct.qzz.io/tags/hugo/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.67586ad19f8c2035f5df8bb166b08eaf36b63b45b207410c947b925e41614caf.css" integrity="sha256-Z1hq0Z&#43;MIDX134uxZrCOrza2O0WyB0EMlHuSXkFhTK8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bc526f00148ab0e6fbf21c122047a937d7411ebf21b62cc62dee336689e809fa.css" integrity="sha256-vFJvABSKsOb78hwSIEepN9dBHr8htizGLe4zZonoCfo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://antarct.qzz.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://antarct.qzz.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://antarct.qzz.io/favicon-32x32.png">
@@ -153,36 +153,38 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Hugo PaperMod 主题美化指南
+    <h2 class="entry-hint-parent">PaperMod 我只改了这几处
     </h2>
   </header>
   <div class="entry-content">
-    <p>承接上一篇 Hugo 搭建教程，这篇文章专门讲如何美化 PaperMod 主题。
-为什么选 PaperMod？ PaperMod 是 Hugo 生态中最受欢迎的博客主题之一。它简洁、快速、支持深色模式，而且提供了丰富的自定义接口——你不需要修改主题源码，就能实现各种个性化效果。
-1. 自定义颜色主题 PaperMod 使用 CSS 变量来控制颜色。在 assets/css/extended/ 目录下创建自定义 CSS 文件，就可以覆盖主题默认颜色：
-:root { --accent: #6366f1; --theme: #f8f9fc; --entry: #ffffff; --primary: #1a1d23; --secondary: #6b7280; --border: rgba(0,0,0,0.07); } [data-theme=&#34;dark&#34;] { --accent: #818cf8; --theme: #0b0d11; --entry: #15171e; --primary: #e8eaed; --secondary: #9aa0ac; --border: rgba(255,255,255,0.06); } 2. 更换字体 在同一个 CSS 文件中引入 Google Fonts：
-@import url(&#39;https://fonts.googleapis.com/css2?family=Noto&#43;Sans&#43;SC:wght@300;400;500;700&amp;display=swap&#39;); body { font-family: &#39;Noto Sans SC&#39;, -apple-system, BlinkMacSystemFont, sans-serif; } 国内用户可以换成思源黑体或方正兰亭等中文字体。
+    <p>PaperMod 是个很完整的主题，默认就很好看。我只改了 4 个地方：
 ...</p>
   </div>
   <footer class="entry-footer">
 
-<span title='2026-06-13 00:00:00 +0000 UTC'>June 13, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>192 words</span>&nbsp;·&nbsp;<span>南极林</span></footer>
-  <a class="entry-link" aria-label="post link to Hugo PaperMod 主题美化指南" href="https://antarct.qzz.io/posts/hugo-papermod-customization/"></a>
+<span title='2026-06-13 00:00:00 +0000 UTC'>June 13, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>85 words</span>&nbsp;·&nbsp;<span>南极林</span></footer>
+  <a class="entry-link" aria-label="post link to PaperMod 我只改了这几处" href="https://antarct.qzz.io/posts/hugo-papermod-customization/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">零成本搭建个人博客：Hugo &#43; GitHub Pages 指南
+    <h2 class="entry-hint-parent">我为什么选 Hugo &#43; GitHub Pages 搭博客
     </h2>
   </header>
   <div class="entry-content">
-    <p>前言 一直想搭一个个人博客，但又不想花钱买服务器？这篇文章手把手教你用 Hugo &#43; GitHub Pages &#43; Cloudflare 免费搭建一个属于自己的博客。
+    <p>去年想搭博客，看了几个方案：
+WordPress — 太臃肿，还得租服务器。而且 WordPress 被攻击的新闻看多了，不想给自己找事。
+Hexo — 朋友在用，说文章多了构建越来越慢。我看他博客有几百篇，每次部署要等十几秒，对我来说能忍，但还是想找个更快的。
+Ghost — 界面确实漂亮，但还是要服务器，免费版限制太多。
+Hugo — 同事推荐的。一个 .exe 搞定所有，不用装 Node、Ruby、PHP。我试了一下 hugo new site 到 hugo server 不到一分钟，当场就定了。
+搭博客的过程 实际搭起来比想象中简单：
+装 Hugo Extended 版（普通版不支持 SCSS，我第一次就装错了，构建报错才发现的） hugo new site 创建项目 装 PaperMod 主题（Git submodule 的方式，方便以后升级） 配 GitHub Actions 自动部署到 GitHub Pages 绑域名 全部弄完大概半小时。之后每次写文章就是：hugo new content posts/xxx.md → 写完 → git push，GitHub Actions 自动部署。
 ...</p>
   </div>
   <footer class="entry-footer">
 
-<span title='2026-05-31 17:56:31 +0800 +0800'>May 31, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>165 words</span>&nbsp;·&nbsp;<span>南极林</span></footer>
-  <a class="entry-link" aria-label="post link to 零成本搭建个人博客：Hugo &#43; GitHub Pages 指南" href="https://antarct.qzz.io/posts/hugo-blog-tutorial/"></a>
+<span title='2026-05-31 17:56:31 +0800 +0800'>May 31, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>91 words</span>&nbsp;·&nbsp;<span>南极林</span></footer>
+  <a class="entry-link" aria-label="post link to 我为什么选 Hugo &#43; GitHub Pages 搭博客" href="https://antarct.qzz.io/posts/hugo-blog-tutorial/"></a>
 </article>
     </main>
     

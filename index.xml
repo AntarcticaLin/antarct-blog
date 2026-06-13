@@ -9,41 +9,61 @@
     <lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://antarct.qzz.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo PaperMod 主题美化指南</title>
+      <title>PaperMod 我只改了这几处</title>
       <link>https://antarct.qzz.io/posts/hugo-papermod-customization/</link>
       <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://antarct.qzz.io/posts/hugo-papermod-customization/</guid>
-      <description>手把手教你自定义 PaperMod 主题，打造属于你的个性化博客</description>
+      <description>我实际用到的 PaperMod 自定义</description>
     </item>
     <item>
-      <title>Markdown 写作指南</title>
-      <link>https://antarct.qzz.io/posts/markdown-guide/</link>
-      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://antarct.qzz.io/posts/markdown-guide/</guid>
-      <description>一篇学会 Markdown 语法，从此专注于内容本身</description>
-    </item>
-    <item>
-      <title>从零开始学 Git：常用命令与工作流</title>
+      <title>工作中真正在用的 Git 命令</title>
       <link>https://antarct.qzz.io/posts/git-basics/</link>
       <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://antarct.qzz.io/posts/git-basics/</guid>
-      <description>一篇适合初学者的 Git 入门教程，覆盖日常工作流中最常用的命令</description>
+      <description>不是教程，是我的日常操作</description>
     </item>
     <item>
-      <title>零成本搭建个人博客：Hugo &#43; GitHub Pages 指南</title>
+      <title>我写博客的 Markdown 习惯</title>
+      <link>https://antarct.qzz.io/posts/markdown-guide/</link>
+      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://antarct.qzz.io/posts/markdown-guide/</guid>
+      <description>没多少技巧，但有些小细节</description>
+    </item>
+    <item>
+      <title>我为什么选 Hugo &#43; GitHub Pages 搭博客</title>
       <link>https://antarct.qzz.io/posts/hugo-blog-tutorial/</link>
       <pubDate>Sun, 31 May 2026 17:56:31 +0800</pubDate>
       <guid>https://antarct.qzz.io/posts/hugo-blog-tutorial/</guid>
-      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;一直想搭一个个人博客，但又不想花钱买服务器？这篇文章手把手教你用 &lt;strong&gt;Hugo + GitHub Pages + Cloudflare&lt;/strong&gt; 免费搭建一个属于自己的博客。&lt;/p&gt;</description>
+      <description>&lt;p&gt;去年想搭博客，看了几个方案：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WordPress&lt;/strong&gt; — 太臃肿，还得租服务器。而且 WordPress 被攻击的新闻看多了，不想给自己找事。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hexo&lt;/strong&gt; — 朋友在用，说文章多了构建越来越慢。我看他博客有几百篇，每次部署要等十几秒，对我来说能忍，但还是想找个更快的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ghost&lt;/strong&gt; — 界面确实漂亮，但还是要服务器，免费版限制太多。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; — 同事推荐的。一个 .exe 搞定所有，不用装 Node、Ruby、PHP。我试了一下 &lt;code&gt;hugo new site&lt;/code&gt; 到 &lt;code&gt;hugo server&lt;/code&gt; 不到一分钟，当场就定了。&lt;/p&gt;
+&lt;h2 id=&#34;搭博客的过程&#34;&gt;搭博客的过程&lt;/h2&gt;
+&lt;p&gt;实际搭起来比想象中简单：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;装 Hugo Extended 版（普通版不支持 SCSS，我第一次就装错了，构建报错才发现的）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hugo new site&lt;/code&gt; 创建项目&lt;/li&gt;
+&lt;li&gt;装 PaperMod 主题（Git submodule 的方式，方便以后升级）&lt;/li&gt;
+&lt;li&gt;配 GitHub Actions 自动部署到 GitHub Pages&lt;/li&gt;
+&lt;li&gt;绑域名&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;全部弄完大概半小时。之后每次写文章就是：&lt;code&gt;hugo new content posts/xxx.md&lt;/code&gt; → 写完 → &lt;code&gt;git push&lt;/code&gt;，GitHub Actions 自动部署。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>免费域名 US.KG / QZZ.IO 注册教程</title>
+      <title>我的 qzz.io 免费域名用了大半年</title>
       <link>https://antarct.qzz.io/posts/free-domain-guide/</link>
       <pubDate>Sun, 31 May 2026 17:56:27 +0800</pubDate>
       <guid>https://antarct.qzz.io/posts/free-domain-guide/</guid>
-      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;想搭网站但没有域名？市面上有不少免费域名服务，本文将详细介绍 &lt;strong&gt;DigitalPlat FreeDomain&lt;/strong&gt; 的注册和使用方法。&lt;/p&gt;</description>
+      <description>&lt;p&gt;这个博客的域名 &lt;code&gt;antarct.qzz.io&lt;/code&gt; 是免费域名，来自 DigitalPlat FreeDomain 项目，用了大半年了，目前一切正常。&lt;/p&gt;
+&lt;h2 id=&#34;怎么来的&#34;&gt;怎么来的&lt;/h2&gt;
+&lt;p&gt;去年搭博客时不想花钱买域名——不是花不起，是觉得万一博客没坚持下来，域名白买了。&lt;/p&gt;
+&lt;p&gt;搜了一圈免费域名方案：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Freenom&lt;/strong&gt;（.tk .ml 等）— 曾经最火，但已经被回收了，现在注册不了&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;EU.org&lt;/strong&gt; — 波兰的免费域名，审核要等很久，我等了两周没消息放弃了&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DigitalPlat FreeDomain&lt;/strong&gt; — 操作简单，当天生效，就它了&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
