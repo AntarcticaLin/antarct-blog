@@ -3,6 +3,7 @@ title: "Hugo PaperMod 主题美化指南"
 date: 2026-06-13
 description: "手把手教你自定义 PaperMod 主题，打造属于你的个性化博客"
 tags: ["tutorial", "hugo", "blog"]
+comments: true
 ---
 
 承接上一篇 Hugo 搭建教程，这篇文章专门讲如何美化 PaperMod 主题。

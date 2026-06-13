@@ -1,0 +1,13 @@
+{{- if and (eq .Kind "page") (not .IsHome) }}
+<div class="post-author-box">
+  <div class="author-avatar">林</div>
+  <div class="author-info">
+    <div class="author-name">{{ site.Params.author }}</div>
+    <div class="author-bio">开发者，记录技术、生活和思考。用文字对抗遗忘，用分享连接世界。</div>
+    <div class="author-links">
+      <a href="https://github.com/antarctlin" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="{{ "about/" | absLangURL }}">关于我</a>
+    </div>
+  </div>
+</div>
+{{- end }}

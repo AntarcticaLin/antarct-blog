@@ -8,14 +8,23 @@ theme = 'PaperMod'
   description = "南极林的个人博客"
   author = "南极林"
 
+  # 阅读体验
+  ShowReadingTime = true
+  ShowWordCount = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowToc = true
+  TocOpen = false
+
+  # 主页信息
   [params.homeInfoParams]
     Title = "你好，我是南极林"
     Content = "欢迎来到我的博客！这里记录技术、生活和思考。"
 
+  # 社交图标
   [[params.socialIcons]]
     name = 'github'
     url = 'https://github.com/antarctlin'
-
   [[params.socialIcons]]
     name = 'rss'
     url = 'https://antarct.qzz.io/index.xml'

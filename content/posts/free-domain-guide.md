@@ -3,6 +3,7 @@ date = '2026-05-31T17:56:27+08:00'
 draft = false
 title = '免费域名 US.KG / QZZ.IO 注册教程'
 tags = ['tutorial', 'domain', 'free']
+comments = true
 +++
 
 ## 前言

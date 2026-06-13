@@ -549,6 +549,239 @@ body {
   font-weight: 700;
 }
 
+/* ---------- 目录 TOC ---------- */
+details.toc {
+  border-radius: var(--radius) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--entry) !important;
+  margin-bottom: 24px;
+}
+
+details.toc summary {
+  padding: 10px 16px !important;
+  font-weight: 600;
+  color: var(--primary);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+details.toc summary:hover {
+  background: var(--accent-muted);
+}
+
+details.toc .inner {
+  margin: 0 16px !important;
+  padding: 8px 0 12px !important;
+}
+
+details.toc nav ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+details.toc nav ul ul {
+  padding-inline-start: 20px;
+}
+
+details.toc nav a {
+  color: var(--secondary);
+  font-size: 0.88rem;
+  line-height: 1.9;
+  text-decoration: none;
+  border-bottom: none !important;
+  transition: color 0.15s;
+}
+
+details.toc nav a:hover {
+  color: var(--accent);
+}
+
+/* ---------- 阅读进度条 ---------- */
+#reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--accent-gradient);
+  z-index: 99999;
+  width: 0%;
+  transition: width 0.1s linear;
+  box-shadow: 0 0 8px var(--accent-muted);
+}
+
+/* ---------- 文章翻页导航 ---------- */
+.paginav {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  margin-top: 24px;
+}
+
+.paginav a {
+  padding: 18px 20px;
+  transition: all 0.2s;
+  gap: 0.3rem;
+}
+
+.paginav a:hover {
+  background: var(--accent-muted);
+}
+
+.paginav .title {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.paginav span:not(.title) {
+  font-weight: 500;
+  color: var(--primary);
+}
+
+/* ---------- 归档页 ---------- */
+.archive-year {
+  margin-top: 32px;
+}
+
+.archive-year:first-of-type {
+  margin-top: 0;
+}
+
+.archive-year-header {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.archive-year-header::before {
+  content: '📅 ';
+  font-size: 1.2rem;
+}
+
+.archive-month {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.archive-month-header {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  min-width: 3em;
+}
+
+.archive-entry {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.archive-entry-title {
+  font-size: 0.92rem;
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.archive-entry-title:hover {
+  color: var(--accent);
+}
+
+.archive-entry-date {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* ---------- 文章字数/阅读时间 ---------- */
+.post-meta span:has(+ span) {
+  /* already styled in base */
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex !important;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+/* ---------- 作者信息框 ---------- */
+.post-author-box {
+  margin-top: 32px;
+  padding: 24px 28px;
+  background: var(--accent-muted);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.post-author-box .author-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--accent-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 3px var(--theme);
+}
+
+.post-author-box .author-info {
+  flex: 1;
+}
+
+.post-author-box .author-name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+.post-author-box .author-bio {
+  font-size: 0.85rem;
+  color: var(--secondary);
+  line-height: 1.6;
+}
+
+.post-author-box .author-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.post-author-box .author-links a {
+  color: var(--accent);
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.post-author-box .author-links a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Giscus 评论 ---------- */
+.post-single .giscus {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
 /* ---------- 归档、标签等页面 ---------- */
 .archives-list,
 .tag-cloud {

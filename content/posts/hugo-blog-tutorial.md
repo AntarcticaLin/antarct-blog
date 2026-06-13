@@ -3,6 +3,7 @@ date = '2026-05-31T17:56:31+08:00'
 draft = false
 title = '零成本搭建个人博客：Hugo + GitHub Pages 指南'
 tags = ['tutorial', 'hugo', 'blog']
+comments = true
 +++
 
 ## 前言

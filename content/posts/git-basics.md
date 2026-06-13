@@ -3,6 +3,7 @@ title: "从零开始学 Git：常用命令与工作流"
 date: 2026-06-13
 description: "一篇适合初学者的 Git 入门教程，覆盖日常工作流中最常用的命令"
 tags: ["tutorial", "git", "dev"]
+comments: true
 ---
 
 Git 是现代开发的必备技能。不管你是独立开发者还是团队协作，掌握 Git 都能让你的工作更高效。
