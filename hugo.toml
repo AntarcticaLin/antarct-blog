@@ -1,6 +1,7 @@
 baseURL = 'https://antarct.qzz.io/'
 locale = 'zh-cn'
 title = "南极林的博客"
+enableEmoji = true
 theme = 'PaperMod'
 
 [params]
