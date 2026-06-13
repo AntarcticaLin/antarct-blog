@@ -15,6 +15,10 @@ theme = 'PaperMod'
     name = 'github'
     url = 'https://github.com/antarctlin'
 
+  [[params.socialIcons]]
+    name = 'rss'
+    url = 'https://antarct.qzz.io/index.xml'
+
 [menu]
   [[menu.main]]
     identifier = 'archives'
