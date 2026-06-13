@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>南极林的博客</title>
+    <link>https://antarct.qzz.io/</link>
+    <description>Recent content on 南极林的博客</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 31 May 2026 17:56:31 +0800</lastBuildDate>
+    <atom:link href="https://antarct.qzz.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World! 我的博客开张了</title>
+      <link>https://antarct.qzz.io/posts/hello-world/</link>
+      <pubDate>Sun, 31 May 2026 17:56:31 +0800</pubDate>
+      <guid>https://antarct.qzz.io/posts/hello-world/</guid>
+      <description>&lt;h2 id=&#34;你好互联网-&#34;&gt;你好，互联网 👋&lt;/h2&gt;
+&lt;p&gt;这是我的个人博客，终于开张了！&lt;/p&gt;
+&lt;p&gt;从有这个想法到今天真的把网站搭起来，中间拖了很久。总觉得&amp;quot;等准备好了再开始&amp;quot;，但其实永远不会有&amp;quot;完全准备好&amp;quot;的那一天。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>零成本搭建个人博客：Hugo &#43; GitHub Pages 指南</title>
+      <link>https://antarct.qzz.io/posts/hugo-blog-tutorial/</link>
+      <pubDate>Sun, 31 May 2026 17:56:31 +0800</pubDate>
+      <guid>https://antarct.qzz.io/posts/hugo-blog-tutorial/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;一直想搭一个个人博客，但又不想花钱买服务器？这篇文章手把手教你用 &lt;strong&gt;Hugo + GitHub Pages + Cloudflare&lt;/strong&gt; 免费搭建一个属于自己的博客。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>免费域名 US.KG / QZZ.IO 注册教程</title>
+      <link>https://antarct.qzz.io/posts/free-domain-guide/</link>
+      <pubDate>Sun, 31 May 2026 17:56:27 +0800</pubDate>
+      <guid>https://antarct.qzz.io/posts/free-domain-guide/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;想搭网站但没有域名？市面上有不少免费域名服务，本文将详细介绍 &lt;strong&gt;DigitalPlat FreeDomain&lt;/strong&gt; 的注册和使用方法。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>我的第一篇博客</title>
+      <link>https://antarct.qzz.io/posts/first-post/</link>
+      <pubDate>Sun, 31 May 2026 13:29:36 +0800</pubDate>
+      <guid>https://antarct.qzz.io/posts/first-post/</guid>
+      <description>&lt;h2 id=&#34;hello-world-&#34;&gt;Hello World! 🎉&lt;/h2&gt;
+&lt;p&gt;这是我的第一篇博客文章。&lt;/p&gt;
+&lt;p&gt;用 Hugo + GitHub Pages 搭了一个个人博客，绑定了我刚注册的域名 &lt;code&gt;antarct.qzz.io&lt;/code&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;为什么要写博客&#34;&gt;为什么要写博客？&lt;/h3&gt;
+&lt;p&gt;记录自己学到的技术知识、踩过的坑、生活中的思考和感悟。写给自己看，也希望能帮到别人。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;2026-05-31 于北京&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

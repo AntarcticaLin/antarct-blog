@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Life on 南极林的博客</title>
+    <link>https://antarct.qzz.io/tags/life/</link>
+    <description>Recent content in Life on 南极林的博客</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 31 May 2026 17:56:31 +0800</lastBuildDate>
+    <atom:link href="https://antarct.qzz.io/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World! 我的博客开张了</title>
+      <link>https://antarct.qzz.io/posts/hello-world/</link>
+      <pubDate>Sun, 31 May 2026 17:56:31 +0800</pubDate>
+      <guid>https://antarct.qzz.io/posts/hello-world/</guid>
+      <description>&lt;h2 id=&#34;你好互联网-&#34;&gt;你好，互联网 👋&lt;/h2&gt;
+&lt;p&gt;这是我的个人博客，终于开张了！&lt;/p&gt;
+&lt;p&gt;从有这个想法到今天真的把网站搭起来，中间拖了很久。总觉得&amp;quot;等准备好了再开始&amp;quot;，但其实永远不会有&amp;quot;完全准备好&amp;quot;的那一天。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
