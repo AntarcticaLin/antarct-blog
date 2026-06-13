@@ -1,0 +1,350 @@
+/* ====================================================
+   南极林的博客 · 自定义设计覆盖
+   放在 assets/css/extended/ 下被 PaperMod 自动加载
+   ==================================================== */
+
+/* ---------- 字体 ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ---------- 主题色系覆盖 ---------- */
+:root {
+  --accent: #6366f1;
+  --accent-muted: rgba(99,102,241,0.12);
+  --accent-gradient: linear-gradient(135deg, #6366f1, #a855f7);
+  --radius: 14px;
+  --theme: #f8f9fc;
+  --entry: #ffffff;
+  --primary: #1a1d23;
+  --secondary: #6b7280;
+  --tertiary: #d1d5db;
+  --content: #1a1d23;
+  --border: rgba(0,0,0,0.07);
+}
+
+[data-theme="dark"] {
+  --accent: #818cf8;
+  --accent-muted: rgba(129,140,248,0.12);
+  --accent-gradient: linear-gradient(135deg, #818cf8, #c084fc);
+  --theme: #0b0d11;
+  --entry: #15171e;
+  --primary: #e8eaed;
+  --secondary: #9aa0ac;
+  --tertiary: #3f434a;
+  --content: #d1d5db;
+  --border: rgba(255,255,255,0.06);
+}
+
+/* ---------- 导航栏 ---------- */
+.header {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  background: transparent !important;
+}
+
+.logo a {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.menu a {
+  color: var(--secondary) !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent-gradient);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+}
+
+.menu a:hover {
+  color: var(--primary) !important;
+}
+
+.menu a:hover::after {
+  transform: scaleX(1);
+}
+
+.menu a.active::after {
+  transform: scaleX(1);
+}
+
+/* ---------- Theme toggle ---------- */
+#theme-toggle {
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+#theme-toggle:hover {
+  background: var(--accent-muted);
+  color: var(--accent);
+}
+
+/* ---------- 主页 Hero 区 ---------- */
+.home-info {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 !important;
+  padding: 0 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 光晕装饰 */
+.home-info::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: var(--accent-gradient);
+  opacity: 0.06;
+  filter: blur(100px);
+  top: -150px;
+  right: -150px;
+  pointer-events: none;
+}
+
+.home-info::after {
+  content: '';
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: #06b6d4;
+  opacity: 0.04;
+  filter: blur(80px);
+  bottom: -80px;
+  left: -80px;
+  pointer-events: none;
+}
+
+/* Avatar 圆形头像 */
+.home-info .entry-header {
+  overflow: visible !important;
+  -webkit-line-clamp: unset !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-info .entry-header::before {
+  content: '南';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--accent-gradient);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 0 0 4px var(--theme), 0 0 0 6px var(--accent);
+}
+
+.home-info .entry-header h1 {
+  font-size: 2.8rem !important;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.home-info .entry-header h1 .highlight {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home-info .entry-content {
+  margin: 0 !important;
+  font-size: 1.1rem !important;
+  color: var(--secondary);
+  -webkit-line-clamp: unset !important;
+  text-align: center;
+}
+
+.home-info .entry-content p {
+  margin: 8px 0 0 !important;
+  max-width: 460px;
+}
+
+.home-info .entry-footer {
+  margin-top: 24px;
+  -webkit-line-clamp: unset !important;
+}
+
+/* ---------- 文章卡片 ---------- */
+.post-entry {
+  padding: 24px 28px !important;
+  border-radius: var(--radius) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--entry) !important;
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+/* 左侧 hover 指示条 */
+.post-entry::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  background: var(--accent-gradient);
+  border-radius: 0 3px 3px 0;
+  transition: height 0.35s ease;
+  z-index: 1;
+}
+
+.post-entry:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1) !important;
+  border-color: transparent !important;
+}
+
+[data-theme="dark"] .post-entry:hover {
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4) !important;
+}
+
+.post-entry:hover::before {
+  height: 100%;
+}
+
+.post-entry:hover .entry-header h2 {
+  color: var(--accent);
+  transition: color 0.25s;
+}
+
+.post-entry .entry-header h2 {
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+
+.post-entry .entry-content {
+  font-size: 0.9rem !important;
+  color: var(--secondary);
+  line-height: 1.7;
+}
+
+.post-entry .entry-footer {
+  font-size: 0.8rem !important;
+  color: var(--secondary);
+  opacity: 0.85;
+}
+
+/* ---------- 内容页面 ---------- */
+.post-single {
+  background: var(--entry);
+  border-radius: var(--radius);
+  padding: 32px 40px;
+  border: 1px solid var(--border);
+}
+
+.page-header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* ---------- 归档、标签等页面 ---------- */
+.archives-list,
+.tag-cloud {
+  padding: 16px 0;
+}
+
+/* ---------- 回到顶部按钮 ---------- */
+.top-link {
+  border-radius: 12px !important;
+  border: 1px solid var(--border) !important;
+  background: var(--entry) !important;
+  backdrop-filter: blur(8px);
+  transition: all 0.25s;
+}
+
+.top-link:hover {
+  border-color: var(--accent) !important;
+  background: var(--accent-muted) !important;
+  color: var(--accent) !important;
+  transform: translateY(-2px);
+}
+
+/* ---------- 分页 ---------- */
+.pagination a {
+  border-radius: 10px !important;
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+
+.pagination a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ---------- 页脚 ---------- */
+.footer {
+  border-top: 1px solid var(--border);
+  color: var(--secondary);
+  font-size: 0.8rem;
+}
+
+.footer a {
+  color: var(--accent);
+}
+
+/* ---------- 内页自适应 ---------- */
+@media (max-width: 600px) {
+  .home-info {
+    min-height: 75vh;
+  }
+  .home-info .entry-header h1 {
+    font-size: 1.8rem !important;
+  }
+  .home-info .entry-content {
+    font-size: 1rem !important;
+  }
+  .post-entry {
+    padding: 18px 20px !important;
+  }
+  .post-entry .entry-header h2 {
+    font-size: 1.05rem !important;
+  }
+  .post-single {
+    padding: 20px 18px;
+  }
+}
