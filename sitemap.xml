@@ -3,22 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://antarct.qzz.io/tags/blog/</loc>
-    <lastmod>2026-06-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://antarct.qzz.io/tags/dev/</loc>
     <lastmod>2026-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://antarct.qzz.io/tags/git/</loc>
     <lastmod>2026-06-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://antarct.qzz.io/tags/hugo/</loc>
-    <lastmod>2026-06-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://antarct.qzz.io/tags/markdown/</loc>
-    <lastmod>2026-06-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://antarct.qzz.io/posts/hugo-papermod-customization/</loc>
     <lastmod>2026-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://antarct.qzz.io/posts/</loc>
@@ -39,6 +30,12 @@
     <loc>https://antarct.qzz.io/posts/markdown-guide/</loc>
     <lastmod>2026-06-13T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://antarct.qzz.io/tags/blog/</loc>
+    <lastmod>2026-05-31T17:56:31+08:00</lastmod>
+  </url><url>
+    <loc>https://antarct.qzz.io/tags/hugo/</loc>
+    <lastmod>2026-05-31T17:56:31+08:00</lastmod>
+  </url><url>
     <loc>https://antarct.qzz.io/posts/hugo-blog-tutorial/</loc>
     <lastmod>2026-05-31T17:56:31+08:00</lastmod>
   </url><url>
@@ -52,5 +49,11 @@
     <lastmod>2026-05-31T17:56:27+08:00</lastmod>
   </url><url>
     <loc>https://antarct.qzz.io/categories/</loc>
+  </url><url>
+    <loc>https://antarct.qzz.io/about/</loc>
+  </url><url>
+    <loc>https://antarct.qzz.io/archives/</loc>
+  </url><url>
+    <loc>https://antarct.qzz.io/search/</loc>
   </url>
 </urlset>

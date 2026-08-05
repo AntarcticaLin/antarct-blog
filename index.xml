@@ -9,13 +9,6 @@
     <lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://antarct.qzz.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>PaperMod 我只改了这几处</title>
-      <link>https://antarct.qzz.io/posts/hugo-papermod-customization/</link>
-      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://antarct.qzz.io/posts/hugo-papermod-customization/</guid>
-      <description>我实际用到的 PaperMod 自定义</description>
-    </item>
-    <item>
       <title>工作中真正在用的 Git 命令</title>
       <link>https://antarct.qzz.io/posts/git-basics/</link>
       <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
@@ -64,6 +57,13 @@
 &lt;li&gt;&lt;strong&gt;EU.org&lt;/strong&gt; — 波兰的免费域名，审核要等很久，我等了两周没消息放弃了&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;DigitalPlat FreeDomain&lt;/strong&gt; — 操作简单，当天生效，就它了&lt;/li&gt;
 &lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>关于</title>
+      <link>https://antarct.qzz.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://antarct.qzz.io/about/</guid>
+      <description>关于我和这个博客</description>
     </item>
   </channel>
 </rss>
