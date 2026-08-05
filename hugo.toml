@@ -4,6 +4,9 @@ title = "南极林的博客"
 enableEmoji = true
 theme = 'PaperMod'
 
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
 [params]
   # defaultTheme = 'dark'  # 取消强制深色，改由 CSS 保证代码块始终可见
   description = "南极林的个人博客"
