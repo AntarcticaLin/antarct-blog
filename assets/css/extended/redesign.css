@@ -18,7 +18,7 @@ body {
   --code-block-bg: #17323b;
 }
 
-[data-theme="dark"] {
+:root[data-theme="dark"] {
   --accent: #78c5c7;
   --theme: #11252b;
   --entry: #173139;
@@ -220,8 +220,7 @@ body {
 /* ---------- 导航栏 ---------- */
 .header {
   border-bottom: 1px solid var(--border);
-  background: color-mix(in srgb, var(--theme) 92%, transparent);
-  backdrop-filter: blur(12px);
+  background: var(--theme);
 }
 
 .logo a {
