@@ -1,6 +1,6 @@
 baseURL = 'https://antarct.qzz.io/'
 locale = 'zh-cn'
-title = "南极林的博客"
+title = "南极LIN的博客"
 enableEmoji = true
 theme = 'PaperMod'
 
@@ -9,8 +9,8 @@ theme = 'PaperMod'
 
 [params]
   # defaultTheme = 'dark'  # 取消强制深色，改由 CSS 保证代码块始终可见
-  description = "南极林的个人博客"
-  author = "南极林"
+  description = "南极LIN的个人博客"
+  author = "南极LIN"
 
   # 阅读体验
   ShowReadingTime = true
@@ -22,7 +22,7 @@ theme = 'PaperMod'
 
   # 主页信息
   [params.homeInfoParams]
-    Title = "你好，我是南极林"
+    Title = "你好，我是南极LIN"
     Content = "欢迎来到我的博客！这里记录技术、生活和思考。"
 
   # 社交图标
