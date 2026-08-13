@@ -1,6 +1,7 @@
 public/
 .hugo_build.lock
 resources/_gen/
+tools/
 .DS_Store
 Thumbs.db
 *.swp

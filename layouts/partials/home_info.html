@@ -1,5 +1,6 @@
 {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info">
+    <div class="home-kicker">ANTARCT LIN · NOTES FROM THE SOUTH</div>
     <header class="entry-header">
         <h1>{{ .Title }}</h1>
     </header>
@@ -7,8 +8,11 @@
         {{ $opts := dict "display" "block" }}
         {{ .Content | $.Page.RenderString $opts }}
     </div>
-    <footer class="entry-footer">
-        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    <footer class="entry-footer home-actions">
+        <a class="home-primary-link" href="#recent-posts">开始阅读 <span aria-hidden="true">↓</span></a>
+        <div class="home-socials">
+            {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+        </div>
     </footer>
 </article>
 {{- end -}}
