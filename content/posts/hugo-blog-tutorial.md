@@ -16,11 +16,13 @@ comments = true
 
 **Hugo** — 同事推荐的。一个 .exe 搞定所有，不用装 Node、Ruby、PHP。我试了一下 `hugo new site` 到 `hugo server` 不到一分钟，当场就定了。
 
+<!--more-->
+
 ## 搭博客的过程
 
 实际搭起来比想象中简单：
 
-1. 装 Hugo Extended 版（普通版不支持 SCSS，我第一次就装错了，构建报错才发现的）
+1. 装 Hugo Extended 版（我当时用的主题需要它处理 SCSS，第一次装错版本后构建才报错）
 2. `hugo new site` 创建项目
 3. 装 PaperMod 主题（Git submodule 的方式，方便以后升级）
 4. 配 GitHub Actions 自动部署到 GitHub Pages
@@ -28,12 +30,10 @@ comments = true
 
 全部弄完大概半小时。之后每次写文章就是：`hugo new content posts/xxx.md` → 写完 → `git push`，GitHub Actions 自动部署。
 
-<!--more-->
-
 ## 用了一年的感受
 
 **好的方面：**
-- 构建真的快，几百篇也是毫秒级
+- 构建很快，普通博客通常几乎感觉不到等待
 - Markdown 写东西很专注，不用调格式
 - 零成本，唯一花钱的是域名（其实也是免费的，用的 qzz.io）
 - Git 管理文章，历史记录清晰，不用担心写坏

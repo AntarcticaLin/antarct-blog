@@ -56,7 +56,7 @@ git rebase --continue
 
 | 状态 | 命令 |
 |------|------|
-| 改了还没 add | `git checkout -- 文件名` |
+| 改了还没 add | `git restore 文件名`（旧写法：`git checkout -- 文件名`） |
 | 已经 add 了 | `git reset HEAD 文件名` |
 | 已经 commit 了 | `git reset --soft HEAD~1` |
 | 已经 push 了 | `git revert HEAD`（不是 reset） |
