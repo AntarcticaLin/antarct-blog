@@ -31,32 +31,14 @@
 &lt;p&gt;&lt;strong&gt;WordPress&lt;/strong&gt; — 太臃肿，还得租服务器。而且 WordPress 被攻击的新闻看多了，不想给自己找事。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Hexo&lt;/strong&gt; — 朋友在用，说文章多了构建越来越慢。我看他博客有几百篇，每次部署要等十几秒，对我来说能忍，但还是想找个更快的。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Ghost&lt;/strong&gt; — 界面确实漂亮，但还是要服务器，免费版限制太多。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; — 同事推荐的。一个 .exe 搞定所有，不用装 Node、Ruby、PHP。我试了一下 &lt;code&gt;hugo new site&lt;/code&gt; 到 &lt;code&gt;hugo server&lt;/code&gt; 不到一分钟，当场就定了。&lt;/p&gt;
-&lt;h2 id=&#34;搭博客的过程&#34;&gt;搭博客的过程&lt;/h2&gt;
-&lt;p&gt;实际搭起来比想象中简单：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;装 Hugo Extended 版（普通版不支持 SCSS，我第一次就装错了，构建报错才发现的）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hugo new site&lt;/code&gt; 创建项目&lt;/li&gt;
-&lt;li&gt;装 PaperMod 主题（Git submodule 的方式，方便以后升级）&lt;/li&gt;
-&lt;li&gt;配 GitHub Actions 自动部署到 GitHub Pages&lt;/li&gt;
-&lt;li&gt;绑域名&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;全部弄完大概半小时。之后每次写文章就是：&lt;code&gt;hugo new content posts/xxx.md&lt;/code&gt; → 写完 → &lt;code&gt;git push&lt;/code&gt;，GitHub Actions 自动部署。&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; — 同事推荐的。一个 .exe 搞定所有，不用装 Node、Ruby、PHP。我试了一下 &lt;code&gt;hugo new site&lt;/code&gt; 到 &lt;code&gt;hugo server&lt;/code&gt; 不到一分钟，当场就定了。&lt;/p&gt;</description>
     </item>
     <item>
       <title>我的 qzz.io 免费域名用了大半年</title>
       <link>https://antarct.qzz.io/posts/free-domain-guide/</link>
       <pubDate>Sun, 31 May 2026 17:56:27 +0800</pubDate>
       <guid>https://antarct.qzz.io/posts/free-domain-guide/</guid>
-      <description>&lt;p&gt;这个博客的域名 &lt;code&gt;antarct.qzz.io&lt;/code&gt; 是免费域名，来自 DigitalPlat FreeDomain 项目，用了大半年了，目前一切正常。&lt;/p&gt;
-&lt;h2 id=&#34;怎么来的&#34;&gt;怎么来的&lt;/h2&gt;
-&lt;p&gt;去年搭博客时不想花钱买域名——不是花不起，是觉得万一博客没坚持下来，域名白买了。&lt;/p&gt;
-&lt;p&gt;搜了一圈免费域名方案：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Freenom&lt;/strong&gt;（.tk .ml 等）— 曾经最火，但已经被回收了，现在注册不了&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;EU.org&lt;/strong&gt; — 波兰的免费域名，审核要等很久，我等了两周没消息放弃了&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;DigitalPlat FreeDomain&lt;/strong&gt; — 操作简单，当天生效，就它了&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;p&gt;这个博客的域名 &lt;code&gt;antarct.qzz.io&lt;/code&gt; 是免费域名，来自 DigitalPlat FreeDomain 项目，用了大半年了，目前一切正常。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

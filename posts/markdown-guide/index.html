@@ -111,8 +111,8 @@
   "keywords": [
     "writing", "markdown"
   ],
-  "articleBody": "Markdown 没什么好教的，语法就那么多。说几个我写博客时注意到的小事情。\n标题 一篇文章只用一个 #。因为 PaperMod 的主题标题本身就是一级标题，文章里再用一级标题就乱了。我从 ## 开始写。\n# 和标题文字之间一定要空格，否则有些渲染器不认。##标题 → 改成 ## 标题。\n列表 有序列表我都写 1.，不写 1. 2. 3.。大部分渲染器会自动递增编号，调整顺序时不用改数字。\n链接 链接描述文字不要写\"点击这里\"或\"详情\"。写有意义的话：\n❌ 详情请看这里 ✅ 详情请看 [Hugo 官方文档](https://gohugo.io) 屏幕阅读器会一条条读链接，“点击这里\"没有任何上下文。\n代码块 代码块一定要标注语言。不标的话没有语法高亮，代码看起来一片灰：\n```python def hello(): print(\"hi\") ``` ```text ← 没有匹配语言也写 text 纯文本内容 ``` 图片 图片放 static/images/ 下，引用路径 /images/xxx.jpg。写的时候我习惯在图片下面加一行说明：\n![Hugo 目录结构](/images/hugo-dir.jpg) *`hugo new site` 生成的目录* Front matter 每篇文章必填 description。它会出现在 RSS 和搜索引擎结果里。不填的话 Hugo 会截取文章前几句，有时候截得不完整。\ndescription: \"没多少技巧，但有些小细节\" tags: [\"writing\", \"markdown\"] tags 也必填，PaperMod 会自动生成标签导航，方便读者找到同类文章。\n写作流程 我不用任何 Markdown 编辑器。VS Code 写，Hugo server 实时预览，git push 发布。写完后第二天再看一遍——当天检查永远发现不了问题。\n",
-  "wordCount" : "80",
+  "articleBody": "Markdown 没什么好教的，语法就那么多。说几个我写博客时注意到的小事情。\n标题 Markdown 本身可以写一级标题，但在这个博客里，PaperMod 已经把文章标题渲染成一级标题，所以正文从 ## 开始写，层级更清楚。\n# 和标题文字之间一定要空格，否则有些渲染器不认。##标题 → 改成 ## 标题。\n列表 有序列表的每一项我都写 1.。大部分渲染器会自动递增编号，调整顺序时不用改数字：\n1. 第一项 1. 第二项 1. 第三项 链接 链接描述文字不要写\"点击这里\"或\"详情\"。写有意义的话：\n❌ 详情请看这里 ✅ 详情请看 [Hugo 官方文档](https://gohugo.io) 屏幕阅读器会一条条读链接，“点击这里\"没有任何上下文。\n代码块 代码块一定要标注语言。不标的话没有语法高亮，代码看起来一片灰：\ndef hello(): print(\"hi\") 纯文本内容 图片 图片放 static/images/ 下，引用路径 /images/xxx.jpg。写的时候我习惯在图片下面加一行说明：\n![Hugo 目录结构](/images/hugo-dir.jpg) *`hugo new site` 生成的目录* Front matter 我会给每篇文章写 description。它会出现在 RSS 和搜索引擎结果里；不填时 Hugo 通常会截取文章前几句，有时不够完整。\ndescription: \"没多少技巧，但有些小细节\" tags: [\"writing\", \"markdown\"] 我也会补上 tags，让 PaperMod 生成标签导航，方便读者找到同类文章。\n写作流程 我不用任何 Markdown 编辑器。VS Code 写，Hugo server 实时预览，git push 发布。写完后第二天再看一遍——当天检查永远发现不了问题。\n",
+  "wordCount" : "76",
   "inLanguage": "en",
   "datePublished": "2026-06-13T00:00:00Z",
   "dateModified": "2026-06-13T00:00:00Z",
@@ -215,7 +215,7 @@
     </div>
     <div class="post-meta">
 
-<span title='2026-06-13 00:00:00 +0000 UTC'>June 13, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>80 words</span>&nbsp;·&nbsp;<span>南极LIN</span>
+<span title='2026-06-13 00:00:00 +0000 UTC'>June 13, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>76 words</span>&nbsp;·&nbsp;<span>南极LIN</span>
 
 </div>
   </header> <details class="toc" >
@@ -245,35 +245,32 @@
 
   <div class="post-content md-content"><p>Markdown 没什么好教的，语法就那么多。说几个我写博客时注意到的小事情。</p>
 <h2 id="标题">标题<a hidden class="anchor" aria-hidden="true" href="#标题">#</a></h2>
-<p>一篇文章只用一个 <code>#</code>。因为 PaperMod 的主题标题本身就是一级标题，文章里再用一级标题就乱了。我从 <code>##</code> 开始写。</p>
+<p>Markdown 本身可以写一级标题，但在这个博客里，PaperMod 已经把文章标题渲染成一级标题，所以正文从 <code>##</code> 开始写，层级更清楚。</p>
 <p><code>#</code> 和标题文字之间<strong>一定要空格</strong>，否则有些渲染器不认。<code>##标题</code> → 改成 <code>## 标题</code>。</p>
 <h2 id="列表">列表<a hidden class="anchor" aria-hidden="true" href="#列表">#</a></h2>
-<p>有序列表我都写 <code>1.</code>，不写 <code>1. 2. 3.</code>。大部分渲染器会自动递增编号，调整顺序时不用改数字。</p>
-<h2 id="链接">链接<a hidden class="anchor" aria-hidden="true" href="#链接">#</a></h2>
+<p>有序列表的每一项我都写 <code>1.</code>。大部分渲染器会自动递增编号，调整顺序时不用改数字：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> 第一项
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> 第二项
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> 第三项
+</span></span></code></pre></div><h2 id="链接">链接<a hidden class="anchor" aria-hidden="true" href="#链接">#</a></h2>
 <p>链接描述文字不要写&quot;点击这里&quot;或&quot;详情&quot;。写有意义的话：</p>
 <pre tabindex="0"><code>❌ 详情请看这里
 ✅ 详情请看 [Hugo 官方文档](https://gohugo.io)
 </code></pre><p>屏幕阅读器会一条条读链接，&ldquo;点击这里&quot;没有任何上下文。</p>
 <h2 id="代码块">代码块<a hidden class="anchor" aria-hidden="true" href="#代码块">#</a></h2>
 <p>代码块一定要标注语言。不标的话没有语法高亮，代码看起来一片灰：</p>
-<pre><code>```python
-def hello():
-    print(&quot;hi&quot;)
-```
-
-```text   ← 没有匹配语言也写 text
-纯文本内容
-```
-</code></pre>
-<h2 id="图片">图片<a hidden class="anchor" aria-hidden="true" href="#图片">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello</span>():
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;hi&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>纯文本内容
+</span></span></code></pre></div><h2 id="图片">图片<a hidden class="anchor" aria-hidden="true" href="#图片">#</a></h2>
 <p>图片放 <code>static/images/</code> 下，引用路径 <code>/images/xxx.jpg</code>。写的时候我习惯在图片下面加一行说明：</p>
 <pre tabindex="0"><code>![Hugo 目录结构](/images/hugo-dir.jpg)
 *`hugo new site` 生成的目录*
 </code></pre><h2 id="front-matter">Front matter<a hidden class="anchor" aria-hidden="true" href="#front-matter">#</a></h2>
-<p>每篇文章必填 <code>description</code>。它会出现在 RSS 和搜索引擎结果里。不填的话 Hugo 会截取文章前几句，有时候截得不完整。</p>
+<p>我会给每篇文章写 <code>description</code>。它会出现在 RSS 和搜索引擎结果里；不填时 Hugo 通常会截取文章前几句，有时不够完整。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;没多少技巧，但有些小细节&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">tags</span>: [<span style="color:#e6db74">&#34;writing&#34;</span>, <span style="color:#e6db74">&#34;markdown&#34;</span>]
-</span></span></code></pre></div><p><code>tags</code> 也必填，PaperMod 会自动生成标签导航，方便读者找到同类文章。</p>
+</span></span></code></pre></div><p>我也会补上 <code>tags</code>，让 PaperMod 生成标签导航，方便读者找到同类文章。</p>
 <h2 id="写作流程">写作流程<a hidden class="anchor" aria-hidden="true" href="#写作流程">#</a></h2>
 <p>我不用任何 Markdown 编辑器。VS Code 写，Hugo server 实时预览，<code>git push</code> 发布。写完后第二天再看一遍——当天检查永远发现不了问题。</p>
 
