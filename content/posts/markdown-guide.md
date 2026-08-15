@@ -3,6 +3,7 @@ title = '我写博客的 Markdown 习惯'
 date = 2026-06-13
 description = '没多少技巧，但有些小细节'
 tags = ['writing', 'markdown']
+comments = true
 +++
 
 Markdown 没什么好教的，语法就那么多。说几个我写博客时注意到的小事情。

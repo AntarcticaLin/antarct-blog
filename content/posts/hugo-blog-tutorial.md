@@ -4,6 +4,7 @@ draft = false
 title = '我为什么选 Hugo + GitHub Pages 搭博客'
 description = '对比 WordPress、Hexo、Ghost 后选了 Hugo：半小时搭完、构建飞快、零成本，用了一年的真实感受。'
 tags = ['hugo', 'blog']
+comments = true
 +++
 
 去年想搭博客，看了几个方案：

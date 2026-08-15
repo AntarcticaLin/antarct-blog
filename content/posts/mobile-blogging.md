@@ -3,6 +3,7 @@ title = '如何用手机更新这个博客'
 date = 2026-08-15
 description = '没有后台也能随时写文章：手机浏览器直接发。'
 tags = ['hugo', 'blog', 'workflow']
+comments = true
 +++
 
 之前写过这个博客没有后台、手机上不好写文章。其实有办法：**GitHub 网页版就能发文章**，整个过程不需要电脑，也不需要装任何 App。

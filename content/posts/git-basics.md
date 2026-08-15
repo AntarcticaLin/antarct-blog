@@ -3,6 +3,7 @@ title = '工作中真正在用的 Git 命令'
 date = 2026-06-13
 description = '不是教程，是我的日常操作'
 tags = ['git', 'dev']
+comments = true
 +++
 
 学了无数次 Git，记住的就那么几个命令。这是我每天真正在用的：

@@ -1,16 +1,13 @@
-{{- /* 评论（giscus）。启用步骤：
-1. 打开 https://github.com/AntarcticaLin/antarct-blog/settings → General → Features → 勾选 Discussions；
-2. 打开 https://giscus.app/，点击 "利用 GitHub 应用" 授权，选择本仓库；
-3. 按提示选择 Discussion 分类（如 General），页面会生成一段 <script>；
-4. 把其中的 data-repo-id、data-category、data-category-id 三个值填到下方对应位置；
-5. 保存并推送，重新部署后评论即生效。
+{{- /* 评论（giscus）。配置已启用。
+       如需更换分类：打开 https://giscus.app/ 重新生成，替换下方三个 data-* 值。
+       若需关闭某篇文章评论：在该文章 front matter 中删掉 comments = true 即可。
 */ -}}
 {{- if (.Param "comments") }}
 <script src="https://giscus.app/client.js"
         data-repo="AntarcticaLin/antarct-blog"
-        data-repo-id="REPO_ID_PENDING"
-        data-category="REPO_CATEGORY_PENDING"
-        data-category-id="CATEGORY_ID_PENDING"
+        data-repo-id="R_kgDOSsvx5w"
+        data-category="General"
+        data-category-id="DIC_kwDOSsvx584DDZ-e"
         data-mapping="pathname"
         data-strict="0"
         data-reactions-enabled="1"
