@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://antarct.qzz.io/sitemap.xml

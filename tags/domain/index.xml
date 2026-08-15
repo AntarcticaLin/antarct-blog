@@ -4,6 +4,11 @@
     <title>Domain on 南极LIN的博客</title>
     <link>https://antarct.qzz.io/tags/domain/</link>
     <description>Recent content in Domain on 南极LIN的博客</description>
+    <image>
+      <title>南极LIN的博客</title>
+      <url>https://antarct.qzz.io/images/og-image.png</url>
+      <link>https://antarct.qzz.io/images/og-image.png</link>
+    </image>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 31 May 2026 17:56:27 +0800</lastBuildDate>
@@ -13,7 +18,7 @@
       <link>https://antarct.qzz.io/posts/free-domain-guide/</link>
       <pubDate>Sun, 31 May 2026 17:56:27 +0800</pubDate>
       <guid>https://antarct.qzz.io/posts/free-domain-guide/</guid>
-      <description>&lt;p&gt;这个博客的域名 &lt;code&gt;antarct.qzz.io&lt;/code&gt; 是免费域名，来自 DigitalPlat FreeDomain 项目，用了大半年了，目前一切正常。&lt;/p&gt;</description>
+      <description>DigitalPlat 免费域名 qzz.io 用了大半年：注册流程、配 Cloudflare 的坑、稳定性感受和续期提醒。</description>
     </item>
   </channel>
 </rss>

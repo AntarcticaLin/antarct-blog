@@ -4,6 +4,11 @@
     <title>南极LIN的博客</title>
     <link>https://antarct.qzz.io/</link>
     <description>Recent content on 南极LIN的博客</description>
+    <image>
+      <title>南极LIN的博客</title>
+      <url>https://antarct.qzz.io/images/og-image.png</url>
+      <link>https://antarct.qzz.io/images/og-image.png</link>
+    </image>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate>
@@ -27,18 +32,14 @@
       <link>https://antarct.qzz.io/posts/hugo-blog-tutorial/</link>
       <pubDate>Sun, 31 May 2026 17:56:31 +0800</pubDate>
       <guid>https://antarct.qzz.io/posts/hugo-blog-tutorial/</guid>
-      <description>&lt;p&gt;去年想搭博客，看了几个方案：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;WordPress&lt;/strong&gt; — 太臃肿，还得租服务器。而且 WordPress 被攻击的新闻看多了，不想给自己找事。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Hexo&lt;/strong&gt; — 朋友在用，说文章多了构建越来越慢。我看他博客有几百篇，每次部署要等十几秒，对我来说能忍，但还是想找个更快的。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Ghost&lt;/strong&gt; — 界面确实漂亮，但还是要服务器，免费版限制太多。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; — 同事推荐的。一个 .exe 搞定所有，不用装 Node、Ruby、PHP。我试了一下 &lt;code&gt;hugo new site&lt;/code&gt; 到 &lt;code&gt;hugo server&lt;/code&gt; 不到一分钟，当场就定了。&lt;/p&gt;</description>
+      <description>对比 WordPress、Hexo、Ghost 后选了 Hugo：半小时搭完、构建飞快、零成本，用了一年的真实感受。</description>
     </item>
     <item>
       <title>我的 qzz.io 免费域名用了大半年</title>
       <link>https://antarct.qzz.io/posts/free-domain-guide/</link>
       <pubDate>Sun, 31 May 2026 17:56:27 +0800</pubDate>
       <guid>https://antarct.qzz.io/posts/free-domain-guide/</guid>
-      <description>&lt;p&gt;这个博客的域名 &lt;code&gt;antarct.qzz.io&lt;/code&gt; 是免费域名，来自 DigitalPlat FreeDomain 项目，用了大半年了，目前一切正常。&lt;/p&gt;</description>
+      <description>DigitalPlat 免费域名 qzz.io 用了大半年：注册流程、配 Cloudflare 的坑、稳定性感受和续期提醒。</description>
     </item>
     <item>
       <title>关于</title>
