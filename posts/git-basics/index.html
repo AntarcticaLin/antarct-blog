@@ -113,8 +113,8 @@
   "keywords": [
     "git", "dev"
   ],
-  "articleBody": "学了无数次 Git，记住的就那么几个命令。这是我每天真正在用的：\n核心循环 git status # 先看看改了什么 git add -A # 全部暂存 git commit -m \"feat: xxx\" # 提交 git push # 推送 就这四个。\n分支 git checkout -b feature/xxx # 开新分支 git checkout main # 切回主分支 git merge feature/xxx # 合并 git branch -d feature/xxx # 删掉已合并的分支 命名规范：feature/xxx、fix/xxx、refactor/xxx。\n拉取代码 git pull --rebase 我配了 pull.rebase true，所以直接 git pull 就是 rebase 模式。好处是提交历史是直线，没有多余的 merge commit。\nrebase 冲突了怎么办：\n# 解决文件冲突 git add . git rebase --continue 搞不定就 git rebase --abort 回到之前的状态。\n撤销 这是 Git 里最有用的知识——不同状态用不同命令：\n状态 命令 改了还没 add git restore 文件名（旧写法：git checkout -- 文件名） 已经 add 了 git reset HEAD 文件名 已经 commit 了 git reset --soft HEAD~1 已经 push 了 git revert HEAD（不是 reset） 记住 git revert 而不是 git reset 去撤销已经推送的提交——reset 会改写历史，其他人会遭殃。\n看历史 git log --oneline # 简洁版 git log --oneline --graph # 带分支图 我配了别名：\ngit config --global alias.lg \"log --oneline --graph --all\" 现在用 git lg 看所有分支的拓扑。\n.gitignore 每个项目第一时间配 .gitignore。我遇到过同事把 .env 提交到仓库的事，密钥全在 GitHub 上裸奔。\n.env node_modules/ build/ .idea/ .DS_Store 一些习惯 提交信息按 Conventional Commits 规范：feat: fix: chore: docs:。不是为了好看，是为了以后能 git log --grep \"feat\" 快速筛选 一个提交只做一件事。“修复登录页白屏和更新 README” 应该拆成两个提交 git push 前先 git pull --rebase，避免推送被拒绝 不确定的命令先用 git xxx --help 看文档 Git 不需要背命令，记住 add → commit → push 这个循环，其他随用随查就行。\n",
-  "wordCount" : "192",
+  "articleBody": "学了无数次 Git，记住的就那么几个命令。这是我每天真正在用的：\n核心循环 git status # 先看看改了什么 git add -A # 全部暂存 git commit -m \"feat: xxx\" # 提交 git push # 推送 就这四个。\n分支 git checkout -b feature/xxx # 开新分支 git checkout main # 切回主分支 git merge feature/xxx # 合并 git branch -d feature/xxx # 删掉已合并的分支 命名规范：feature/xxx、fix/xxx、refactor/xxx。\n拉取代码 git pull --rebase 我配了 pull.rebase true，所以直接 git pull 就是 rebase 模式。好处是提交历史是直线，没有多余的 merge commit。\nrebase 冲突了怎么办：\n# 解决文件冲突 git add . git rebase --continue 搞不定就 git rebase --abort 回到之前的状态。\n撤销 这是 Git 里最有用的知识——不同状态用不同命令：\n状态 命令 改了还没 add git restore 文件名（旧写法：git checkout -- 文件名） 已经 add 了 git reset HEAD 文件名 已经 commit 了 git reset --soft HEAD~1 已经 push 了 git revert HEAD（不是 reset） 记住 git revert 而不是 git reset 去撤销已经推送的提交——reset 会改写历史，其他人会遭殃。\n看历史 git log --oneline # 简洁版 git log --oneline --graph # 带分支图 我配了别名：\ngit config --global alias.lg \"log --oneline --graph --all\" 现在用 git lg 看所有分支的拓扑。\n.gitignore 每个项目第一时间配 .gitignore。我遇到过同事把 .env 提交到仓库的事，密钥全在 GitHub 上裸奔。\n.env node_modules/ build/ .idea/ .DS_Store 一些习惯 提交信息按 Conventional Commits 规范：feat: fix: chore: docs:。不是为了好看，是为了以后能 git log --grep \"feat\" 快速筛选 一个提交只做一件事。“修复登录页白屏和更新 README” 应该拆成两个提交 git push 前先 git pull --rebase，避免推送被拒绝 不确定的命令先用 git xxx --help 看文档 这套流程配合 Hugo 就是完整的博客工作流——写完 git push 自动部署，具体见我为什么选 Hugo + GitHub Pages 搭博客。\nGit 不需要背命令，记住 add → commit → push 这个循环，其他随用随查就行。\n",
+  "wordCount" : "203",
   "inLanguage": "zh-cn",
   "image": "https://antarct.qzz.io/images/og-image.png","datePublished": "2026-06-13T00:00:00Z",
   "dateModified": "2026-06-13T00:00:00Z",
@@ -217,7 +217,7 @@
     </div>
     <div class="post-meta">
 
-<span title='2026-06-13 00:00:00 +0000 UTC'>June 13, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>192 words</span>&nbsp;·&nbsp;<span>南极LIN</span>
+<span title='2026-06-13 00:00:00 +0000 UTC'>June 13, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>203 words</span>&nbsp;·&nbsp;<span>南极LIN</span>
 
 </div>
   </header> <details class="toc" >
@@ -315,6 +315,7 @@ build/
 <li><code>git push</code> 前先 <code>git pull --rebase</code>，避免推送被拒绝</li>
 <li>不确定的命令先用 <code>git xxx --help</code> 看文档</li>
 </ul>
+<p>这套流程配合 Hugo 就是完整的博客工作流——写完 <code>git push</code> 自动部署，具体见<a href="/posts/hugo-blog-tutorial/">我为什么选 Hugo + GitHub Pages 搭博客</a>。</p>
 <p>Git 不需要背命令，记住 <code>add → commit → push</code> 这个循环，其他随用随查就行。</p>
 
   </div>
@@ -325,6 +326,10 @@ build/
       <li><a href="https://antarct.qzz.io/tags/dev/">Dev</a></li>
     </ul>
 <nav class="paginav">
+  <a class="prev" href="https://antarct.qzz.io/posts/why-i-blog/">
+    <span class="title">« </span>
+    <span>为什么写博客：用文字对抗遗忘</span>
+  </a>
   <a class="next" href="https://antarct.qzz.io/posts/markdown-guide/">
     <span class="title"> »</span>
     <span>我写博客的 Markdown 习惯</span>
@@ -340,6 +345,7 @@ build/
     <div class="footer-links">
         <a href="https://github.com/antarctlin" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://antarct.qzz.io/index.xml" target="_blank" rel="noopener noreferrer">RSS</a>
+        <a href="https://app.follow.is/subscribe?url=https%3a%2f%2fantarct.qzz.io%2findex.xml" target="_blank" rel="noopener noreferrer">Follow 订阅</a>
         <a href="https://antarct.qzz.io/about/">关于</a>
         <span class="footer-sep">·</span>
         <span>
@@ -380,7 +386,11 @@ window.addEventListener('scroll', function() {
     if (bar) bar.style.width = progress + '%';
   }
 });
-</script>
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_page_pv" style="display:none">
+  本文阅读量 <span id="busuanzi_value_page_pv"></span>
+</span>
+
 
 <script>
     let menu = document.getElementById('menu');

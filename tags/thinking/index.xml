@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Writing on 南极LIN的博客</title>
-    <link>https://antarct.qzz.io/tags/writing/</link>
-    <description>Recent content in Writing on 南极LIN的博客</description>
+    <title>Thinking on 南极LIN的博客</title>
+    <link>https://antarct.qzz.io/tags/thinking/</link>
+    <description>Recent content in Thinking on 南极LIN的博客</description>
     <image>
       <title>南极LIN的博客</title>
       <url>https://antarct.qzz.io/images/og-image.png</url>
@@ -12,20 +12,13 @@
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 15 Aug 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://antarct.qzz.io/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://antarct.qzz.io/tags/thinking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>为什么写博客：用文字对抗遗忘</title>
       <link>https://antarct.qzz.io/posts/why-i-blog/</link>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://antarct.qzz.io/posts/why-i-blog/</guid>
       <description>写博客一年，最真实的感受：写作不是输出，是思考本身。</description>
-    </item>
-    <item>
-      <title>我写博客的 Markdown 习惯</title>
-      <link>https://antarct.qzz.io/posts/markdown-guide/</link>
-      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://antarct.qzz.io/posts/markdown-guide/</guid>
-      <description>没多少技巧，但有些小细节</description>
     </item>
   </channel>
 </rss>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Hugo on 南极LIN的博客</title>
-    <link>https://antarct.qzz.io/tags/hugo/</link>
-    <description>Recent content in Hugo on 南极LIN的博客</description>
+    <title>Workflow on 南极LIN的博客</title>
+    <link>https://antarct.qzz.io/tags/workflow/</link>
+    <description>Recent content in Workflow on 南极LIN的博客</description>
     <image>
       <title>南极LIN的博客</title>
       <url>https://antarct.qzz.io/images/og-image.png</url>
@@ -12,20 +12,13 @@
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 15 Aug 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://antarct.qzz.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://antarct.qzz.io/tags/workflow/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何用手机更新这个博客</title>
       <link>https://antarct.qzz.io/posts/mobile-blogging/</link>
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://antarct.qzz.io/posts/mobile-blogging/</guid>
       <description>没有后台也能随时写文章：手机浏览器直接发。</description>
-    </item>
-    <item>
-      <title>我为什么选 Hugo &#43; GitHub Pages 搭博客</title>
-      <link>https://antarct.qzz.io/posts/hugo-blog-tutorial/</link>
-      <pubDate>Sun, 31 May 2026 17:56:31 +0800</pubDate>
-      <guid>https://antarct.qzz.io/posts/hugo-blog-tutorial/</guid>
-      <description>对比 WordPress、Hexo、Ghost 后选了 Hugo：半小时搭完、构建飞快、零成本，用了一年的真实感受。</description>
     </item>
   </channel>
 </rss>

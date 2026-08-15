@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://antarct.qzz.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何用手机更新这个博客</title>
+      <link>https://antarct.qzz.io/posts/mobile-blogging/</link>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://antarct.qzz.io/posts/mobile-blogging/</guid>
+      <description>没有后台也能随时写文章：手机浏览器直接发。</description>
+    </item>
+    <item>
+      <title>为什么写博客：用文字对抗遗忘</title>
+      <link>https://antarct.qzz.io/posts/why-i-blog/</link>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://antarct.qzz.io/posts/why-i-blog/</guid>
+      <description>写博客一年，最真实的感受：写作不是输出，是思考本身。</description>
+    </item>
     <item>
       <title>工作中真正在用的 Git 命令</title>
       <link>https://antarct.qzz.io/posts/git-basics/</link>
