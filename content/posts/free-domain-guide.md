@@ -50,3 +50,5 @@ tags = ['domain', 'free']
 如果你只是想搭个个人博客或测试项目，免费域名完全够用。我现在用了大半年，没遇到任何问题。即使哪天这个域名不能用了，也就换个域名的事——文章数据在 GitHub 上丢不了。
 
 毕竟，`git push` 才是真正的"域名"。
+
+相关阅读：整体方案见[我为什么选 Hugo + GitHub Pages 搭博客](/posts/hugo-blog-tutorial/)，日常部署用的 Git 操作见[工作中真正在用的 Git 命令](/posts/git-basics/)。

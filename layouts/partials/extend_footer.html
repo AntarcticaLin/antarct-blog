@@ -18,3 +18,14 @@ window.addEventListener('scroll', function() {
 </script>
 
 {{- /* 在此插入自定义代码（统计等） */ -}}
+
+{{- /* ---------- 访问统计 ---------- */}}
+{{- /* 当前使用不蒜子（busuanzi），零配置、无需注册。若需换 Cloudflare Web Analytics
+       （域名走 Cloudflare 代理时一行脚本即可）或自托管 Umami，删除下方 script 块
+       并插入对应代码即可。 */ -}}
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+{{- if not .IsHome }}
+<span id="busuanzi_container_page_pv" style="display:none">
+  本文阅读量 <span id="busuanzi_value_page_pv"></span>
+</span>
+{{- end }}

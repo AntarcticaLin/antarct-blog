@@ -96,4 +96,6 @@ build/
 - `git push` 前先 `git pull --rebase`，避免推送被拒绝
 - 不确定的命令先用 `git xxx --help` 看文档
 
+这套流程配合 Hugo 就是完整的博客工作流——写完 `git push` 自动部署，具体见[我为什么选 Hugo + GitHub Pages 搭博客](/posts/hugo-blog-tutorial/)。
+
 Git 不需要背命令，记住 `add → commit → push` 这个循环，其他随用随查就行。

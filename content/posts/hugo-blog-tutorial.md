@@ -46,3 +46,5 @@ tags = ['hugo', 'blog']
 ## 总结
 
 Hugo + GitHub Pages 适合愿意在本地写 Markdown、懂一点 Git 的人。如果你想要"打开浏览器就能写"的体验，可能 Ghost 或 WordPress 更合适。但对我来说，用了一年了，没想过换。
+
+相关阅读：[我的 qzz.io 免费域名用了大半年](/posts/free-domain-guide/) 讲了域名这块的取舍；[我写博客的 Markdown 习惯](/posts/markdown-guide/) 讲写作细节；日常的 Git 操作见[工作中真正在用的 Git 命令](/posts/git-basics/)。

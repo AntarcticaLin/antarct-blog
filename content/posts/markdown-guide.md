@@ -72,3 +72,5 @@ tags: ["writing", "markdown"]
 ## 写作流程
 
 我不用任何 Markdown 编辑器。VS Code 写，Hugo server 实时预览，`git push` 发布。写完后第二天再看一遍——当天检查永远发现不了问题。
+
+这套流程跑在 Hugo + GitHub Pages 上，选型过程见[我为什么选 Hugo + GitHub Pages 搭博客](/posts/hugo-blog-tutorial/)，部署相关的 Git 命令见[工作中真正在用的 Git 命令](/posts/git-basics/)。
