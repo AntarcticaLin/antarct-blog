@@ -1,16 +1,20 @@
 baseURL = 'https://antarct.qzz.io/'
-locale = 'zh-cn'
+defaultContentLanguage = 'zh-cn'
+languageCode = 'zh-cn'
 title = "南极LIN的博客"
 enableEmoji = true
 theme = 'PaperMod'
 
 [outputs]
-  home = ['HTML', 'RSS', 'JSON']
+  home = ['HTML', 'RSS', 'JSON', 'robots']
 
 [params]
   # defaultTheme = 'dark'  # 取消强制深色，改由 CSS 保证代码块始终可见
   description = "南极LIN的个人博客"
   author = "南极LIN"
+
+  # 分享卡片图（og:image / twitter:image 全局回退）
+  images = ['/images/og-image.png']
 
   # 阅读体验
   ShowReadingTime = true
@@ -32,6 +36,10 @@ theme = 'PaperMod'
   [[params.socialIcons]]
     name = 'rss'
     url = 'https://antarct.qzz.io/index.xml'
+
+  # 移动端浏览器主题色（与 CSS --accent 一致）
+  [params.assets]
+    theme_color = '#0b6b78'
 
 [menu]
   [[menu.main]]

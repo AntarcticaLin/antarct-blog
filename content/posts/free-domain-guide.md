@@ -2,8 +2,8 @@
 date = '2026-05-31T17:56:27+08:00'
 draft = false
 title = '我的 qzz.io 免费域名用了大半年'
+description = 'DigitalPlat 免费域名 qzz.io 用了大半年：注册流程、配 Cloudflare 的坑、稳定性感受和续期提醒。'
 tags = ['domain', 'free']
-comments = true
 +++
 
 这个博客的域名 `antarct.qzz.io` 是免费域名，来自 DigitalPlat FreeDomain 项目，用了大半年了，目前一切正常。
